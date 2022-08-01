@@ -17,6 +17,7 @@ $font_family_primary: 'Fraunces', serif
 html,
 body
     height: 100%
+    width: 100%
     background-color: $cream
 
 body,
@@ -30,6 +31,21 @@ button
 body,
 p
     color: $dark_grayish_blue
+
+button
+    cursor: pointer
+
+    &.add-cart
+        &:hover
+            background-color: #113829
+            transition: background 1s
+
+.main-content
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    
 
 .container
     max-width: 1220px
@@ -47,12 +63,15 @@ p
 
         img
             width: 100%
+            height: 100%
+            object-fit: cover
             border-top-left-radius: 10px
             border-top-right-radius: 10px
     
     &-body
         grid-area: c-body
         padding: 23px
+        overflow: hidden
 
         .tag
             text-transform: uppercase
@@ -60,6 +79,7 @@ p
             font-size: 12px
             display: block
             margin-bottom: 10px
+            animation: slideLeft .5s ease 0s 1 normal forwards
 
         h1
             font-family: $font_family_primary
@@ -69,9 +89,11 @@ p
             letter-spacing: 1px
             line-height: 34px
             margin-bottom: 18px
+            animation: slideLeft 1s ease 0s 1 normal forwards
 
         p
             line-height: 1.5
+            animation: slideLeft 1.5s ease 0s 1 normal forwards
 
     &-footer
         grid-area: c-footer
@@ -79,8 +101,10 @@ p
         grid-template-areas: "c-price c-price-old" "c-btn c-btn"
         grid-template-columns: 1fr 1fr
         align-items: center
+        column-gap: 6px
         row-gap: 15px
         padding: 0 27px
+        overflow: hidden
 
         .price
             grid-area: c-price
@@ -89,10 +113,12 @@ p
             font-weight: 700
             font-family: $font_family_primary
             line-height: 40px
+            animation: fadeIn 2s ease 0s 1 normal forwards
 
             &-old
                 grid-area: c-price-old
                 text-decoration: line-through
+                animation: fadeIn 2s ease 0s 1 normal forwards
 
         .add-cart
             grid-area: c-btn
@@ -107,4 +133,61 @@ p
             border-radius: 10px
             background-color: $dark_cyan
             border: 1px solid $dark_cyan
+            animation: slideBottom 1s ease 0s 1 normal forwards
+
+@media screen and (min-width: 658px)
+    .card
+        grid-template-areas: "c-img c-body" "c-img c-footer"
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1.5fr -5fr
+        max-width: 595px
+
+        &-image
+            img
+                border-top-right-radius: 0
+                border-bottom-left-radius: 10px
+
+        &-body
+            padding: 30px 32px 0
+
+            .tag
+                margin-bottom: 20px
+
+            h1
+                margin-bottom: 27px
+
+        &-footer
+            column-gap: 20px
+            row-gap: 18px
+            padding: 17px 32px 29px
+
+        &-tag
+            margin-bottom: 24px
+            
+@keyframes slideLeft
+    0%
+        opacity: 0
+        transform: translateX(-250px)
+
+    100%
+        opacity: 1
+        transform: translateX(0)
+
+@keyframes slideBottom
+    0%
+        opacity: 0
+        transform: translateY(250px)
+
+    100%
+        opacity: 1
+        transform: translateY(0)
+
+@keyframes fadeIn
+    0%
+        opacity: 0
+
+    100%
+        opacity: 1
+        
+    100%
         
