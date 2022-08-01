@@ -34,13 +34,12 @@ p
 .container
     max-width: 1220px
     margin: 0 auto
-    padding: 20px
+    padding: 22px 15px
 
 .card
     background-color: $white
     display: grid
     grid-template-areas: "c-img" "c-body" "c-footer"
-    gap: 10px
     border-radius: 10px
 
     &-image
@@ -53,7 +52,7 @@ p
     
     &-body
         grid-area: c-body
-        padding: 20px
+        padding: 23px
 
         .tag
             text-transform: uppercase
@@ -64,11 +63,12 @@ p
 
         h1
             font-family: $font_family_primary
-            font-size: 35px
+            font-size: 30px
             font-weight: 700
             color: $very_dark_blue
             letter-spacing: 1px
-            margin-bottom: 20px
+            line-height: 34px
+            margin-bottom: 18px
 
         p
             line-height: 1.5
@@ -79,20 +79,20 @@ p
         grid-template-areas: "c-price c-price-old" "c-btn c-btn"
         grid-template-columns: 1fr 1fr
         align-items: center
-        column-gap: 20px
-        row-gap: 30px
-        padding: 20px
+        row-gap: 15px
+        padding: 0 27px
 
         .price
             grid-area: c-price
             color: $dark_cyan
-            font-size: 35px
+            font-size: 31px
             font-weight: 700
             font-family: $font_family_primary
-            letter-spacing: 2px
+            line-height: 40px
 
             &-old
                 grid-area: c-price-old
+                text-decoration: line-through
 
         .add-cart
             grid-area: c-btn

@@ -31,7 +31,7 @@ p {
 .container {
   max-width: 1220px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 22px 15px;
 }
 
 .card {
@@ -39,7 +39,6 @@ p {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "c-img" "c-body" "c-footer";
-  gap: 10px;
   border-radius: 10px;
 }
 
@@ -59,7 +58,7 @@ p {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: c-body;
-  padding: 20px;
+  padding: 23px;
 }
 
 .card-body .tag {
@@ -72,11 +71,12 @@ p {
 
 .card-body h1 {
   font-family: "Fraunces", serif;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 700;
   color: #1c232b;
   letter-spacing: 1px;
-  margin-bottom: 20px;
+  line-height: 34px;
+  margin-bottom: 18px;
 }
 
 .card-body p {
@@ -95,10 +95,8 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
-  row-gap: 30px;
-  padding: 20px;
+  row-gap: 15px;
+  padding: 0 27px;
 }
 
 .card-footer .price {
@@ -106,16 +104,17 @@ p {
   -ms-grid-column: 1;
   grid-area: c-price;
   color: #3c8067;
-  font-size: 35px;
+  font-size: 31px;
   font-weight: 700;
   font-family: "Fraunces", serif;
-  letter-spacing: 2px;
+  line-height: 40px;
 }
 
 .card-footer .price-old {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: c-price-old;
+  text-decoration: line-through;
 }
 
 .card-footer .add-cart {
