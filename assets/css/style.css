@@ -95,6 +95,8 @@ button.add-cart:hover {
   font-size: 12px;
   display: block;
   margin-bottom: 10px;
+  -webkit-animation: slideLeft .5s ease 0s 1 normal forwards;
+          animation: slideLeft .5s ease 0s 1 normal forwards;
 }
 
 .card-body h1 {
@@ -105,10 +107,14 @@ button.add-cart:hover {
   letter-spacing: 1px;
   line-height: 34px;
   margin-bottom: 18px;
+  -webkit-animation: slideLeft 1s ease 0s 1 normal forwards;
+          animation: slideLeft 1s ease 0s 1 normal forwards;
 }
 
 .card-body p {
   line-height: 1.5;
+  -webkit-animation: slideLeft 1.5s ease 0s 1 normal forwards;
+          animation: slideLeft 1.5s ease 0s 1 normal forwards;
 }
 
 .card-footer {
@@ -139,6 +145,8 @@ button.add-cart:hover {
   font-weight: 700;
   font-family: "Fraunces", serif;
   line-height: 40px;
+  -webkit-animation: fadeIn 2s ease 0s 1 normal forwards;
+          animation: fadeIn 2s ease 0s 1 normal forwards;
 }
 
 .card-footer .price-old {
@@ -146,6 +154,8 @@ button.add-cart:hover {
   -ms-grid-column: 2;
   grid-area: c-price-old;
   text-decoration: line-through;
+  -webkit-animation: fadeIn 2s ease 0s 1 normal forwards;
+          animation: fadeIn 2s ease 0s 1 normal forwards;
 }
 
 .card-footer .add-cart {
@@ -170,6 +180,8 @@ button.add-cart:hover {
   border-radius: 10px;
   background-color: #3c8067;
   border: 1px solid #3c8067;
+  -webkit-animation: slideBottom 1s ease 0s 1 normal forwards;
+          animation: slideBottom 1s ease 0s 1 normal forwards;
 }
 
 @media screen and (min-width: 658px) {
@@ -264,8 +276,6 @@ button.add-cart:hover {
   100% {
     opacity: 1;
   }
-  100% {
-  }
 }
 
 @keyframes fadeIn {
@@ -274,8 +284,6 @@ button.add-cart:hover {
   }
   100% {
     opacity: 1;
-  }
-  100% {
   }
 }
 /*# sourceMappingURL=style.css.map */
