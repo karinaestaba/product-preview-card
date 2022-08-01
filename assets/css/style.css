@@ -1,0 +1,144 @@
+*,
+*::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #f2ebe3;
+}
+
+body,
+p,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+body,
+p {
+  color: #6c7289;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "c-img" "c-body" "c-footer";
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.card-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: c-img;
+}
+
+.card-image img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: c-body;
+  padding: 20px;
+}
+
+.card-body .tag {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.card-body h1 {
+  font-family: "Fraunces", serif;
+  font-size: 35px;
+  font-weight: 700;
+  color: #1c232b;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.card-body p {
+  line-height: 1.5;
+}
+
+.card-footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: c-footer;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "c-price c-price-old" "c-btn c-btn";
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 30px;
+  padding: 20px;
+}
+
+.card-footer .price {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: c-price;
+  color: #3c8067;
+  font-size: 35px;
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  letter-spacing: 2px;
+}
+
+.card-footer .price-old {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: c-price-old;
+}
+
+.card-footer .add-cart {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: c-btn;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 50px;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 10px;
+  background-color: #3c8067;
+  border: 1px solid #3c8067;
+}
+/*# sourceMappingURL=style.css.map */

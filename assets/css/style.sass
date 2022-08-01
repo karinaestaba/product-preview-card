@@ -1,0 +1,110 @@
+$very_dark_blue: #1c232b
+$dark_grayish_blue: #6c7289
+$white: #ffffff
+$dark_cyan: #3c8067
+$cream: #f2ebe3
+$font_size: 14px
+$font_family_secondary: 'Montserrat', sans-serif
+$font_family_primary: 'Fraunces', serif
+
+*,
+*::before, *::after
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    box-shadow: 0
+
+html,
+body
+    height: 100%
+    background-color: $cream
+
+body,
+p,
+button
+    font-family: $font_family_secondary
+    font-size: $font_size
+    line-height: 1.1
+    font-weight: 500
+
+body,
+p
+    color: $dark_grayish_blue
+
+.container
+    max-width: 1220px
+    margin: 0 auto
+    padding: 20px
+
+.card
+    background-color: $white
+    display: grid
+    grid-template-areas: "c-img" "c-body" "c-footer"
+    gap: 10px
+    border-radius: 10px
+
+    &-image
+        grid-area: c-img
+
+        img
+            width: 100%
+            border-top-left-radius: 10px
+            border-top-right-radius: 10px
+    
+    &-body
+        grid-area: c-body
+        padding: 20px
+
+        .tag
+            text-transform: uppercase
+            letter-spacing: 5px
+            font-size: 12px
+            display: block
+            margin-bottom: 10px
+
+        h1
+            font-family: $font_family_primary
+            font-size: 35px
+            font-weight: 700
+            color: $very_dark_blue
+            letter-spacing: 1px
+            margin-bottom: 20px
+
+        p
+            line-height: 1.5
+
+    &-footer
+        grid-area: c-footer
+        display: grid
+        grid-template-areas: "c-price c-price-old" "c-btn c-btn"
+        grid-template-columns: 1fr 1fr
+        align-items: center
+        column-gap: 20px
+        row-gap: 30px
+        padding: 20px
+
+        .price
+            grid-area: c-price
+            color: $dark_cyan
+            font-size: 35px
+            font-weight: 700
+            font-family: $font_family_primary
+            letter-spacing: 2px
+
+            &-old
+                grid-area: c-price-old
+
+        .add-cart
+            grid-area: c-btn
+            display: flex
+            justify-content: center
+            align-items: center
+            gap: 10px
+            width: 100%
+            min-height: 50px
+            color: $white
+            font-weight: 700
+            border-radius: 10px
+            background-color: $dark_cyan
+            border: 1px solid $dark_cyan
+        
