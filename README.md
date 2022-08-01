@@ -14,7 +14,7 @@ Users should be able to:
 # Links
 
 - Solution URL: [Repo](https://github.com/karinaestaba/product-preview-card)
-- Live Site URL: [Add live site URL here](https://karinaestaba.github.io/product-preview-card)
+- Live Site URL: [Demo](https://karinaestaba.github.io/product-preview-card)
 
 # Built with
 
