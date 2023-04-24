@@ -50,7 +50,7 @@ button
 .container
     max-width: 1220px
     margin: 0 auto
-    padding: 22px 15px
+    padding: 22px 15px 0
 
 .card
     background-color: $white
@@ -134,6 +134,22 @@ button
             background-color: $dark_cyan
             border: 1px solid $dark_cyan
             animation: slideBottom 1s ease 0s 1 normal forwards
+
+.credits
+    text-align: center
+    padding: 0 10px 20px
+    font-size: 12px
+    color: lighten($dark_grayish_blue, 20)
+    line-height: 1.5
+
+    a
+        white-space: nowrap
+        text-decoration: none
+        color: $dark_grayish_blue
+        transition: color 0.3s ease
+
+        &:hover
+            color: darken($dark_grayish_blue, 20)
 
 @media screen and (min-width: 658px)
     .card
