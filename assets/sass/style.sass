@@ -20,6 +20,13 @@ body
     width: 100%
     background-color: $cream
 
+body
+    display: flex
+    flex-direction: column
+    gap: 1rem
+    justify-content: center
+    align-items: center
+
 body,
 p,
 button
@@ -57,6 +64,7 @@ button
     display: grid
     grid-template-areas: "c-img" "c-body" "c-footer"
     border-radius: 10px
+    padding-bottom: 2rem
 
     &-image
         grid-area: c-img
